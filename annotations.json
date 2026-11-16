@@ -1,0 +1,56 @@
+[
+  {
+    "id": "sample-shipping",
+    "title": "Shipping Record",
+    "rule": "添加record 后，TMS 将获取打卡时的定位位置 （静默获取）\n仅允许单向添加，错误需在TMS补录\n完成1后，8之前，需每30min 获取一次定位并记录至TMS -shipping  record\n未开启定位则不允许添加record",
+    "selector": ".checkin-card",
+    "scope": "driver:details:PHW20261001:none:main",
+    "x": 0.92,
+    "y": 0.06
+  },
+  {
+    "id": "sample-pod",
+    "title": "E-POD",
+    "rule": "Attach and submit E-POD.",
+    "selector": "[data-prd-key=\"upload-pod\"]",
+    "scope": "driver:details:PHW20261001:none:main",
+    "x": 0.85,
+    "y": 0.15
+  },
+  {
+    "id": "5c77efc9-a42a-4293-8d6e-0243947889a6",
+    "title": "site photo",
+    "rule": "上传图片带定位与时间水印，仅允许调取相机，不允许相册",
+    "selector": "main:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(3) > div:nth-of-type(1) > button:nth-of-type(1)",
+    "scope": "driver:details:PHW20261001:none:main",
+    "x": 0.22140638237785937,
+    "y": 0.653125
+  },
+  {
+    "id": "925263c9-2305-453b-892a-321d912a8add",
+    "title": "charges",
+    "rule": "生成对应类型subtask , 根据TMS 费用项状态进行更新",
+    "selector": "[data-prd-key=\"expenses\"]",
+    "scope": "driver:details:PHW20261001:none:main",
+    "x": 0.9565789473684211,
+    "y": 0.08530389512638775
+  },
+  {
+    "id": "9223ed92-9193-49b0-a886-343c36d90277",
+    "title": "Doc Validity",
+    "rule": "1. 展示最近要过期的文件剩余天数\n2. 提交后需TMS 审核",
+    "selector": "main:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(2) > details:nth-of-type(1) > summary:nth-of-type(1)",
+    "scope": "driver:my::none:main",
+    "x": 0.3089080459770115,
+    "y": 0.18333333333333332
+  },
+  {
+    "id": "96435fda-3c63-41f0-9056-cd4e6a76ee44",
+    "title": "Help",
+    "rule": "将根据业务反馈逐渐完善帮助中心",
+    "selector": "main:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(5)",
+    "scope": "driver:my::none:main",
+    "x": 0.9092105263157895,
+    "y": 0.22238372093023256
+  }
+]
